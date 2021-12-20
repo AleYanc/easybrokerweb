@@ -1,0 +1,26 @@
+<h1 class="index-heading">Listing all properties</h1>
+<div class="main-wrapper">
+  <%@response["content"].each do |property|%>
+    <div class="property-card">
+      <div class="image">
+        <%if property["title_image_thumb"]%>
+          <%=image_tag property["title_image_thumb"]%>
+        <%else%>
+          <p class="noimage"><i class="fas fa-exclamation-triangle"></i> No image</p>
+        <%end%>
+      </div>
+      <div class="card-text">
+        <p class="public-id"><%=property["public_id"]%></p>
+        <p class="title"><%=property["title"]%></p>
+        <p class="type"><%=property["property_type"]%></p>
+        <p class="type"><i class="fas fa-map-marker-alt"></i> <%=property["location"]%></p>
+      </div>
+      <div class="property-link">
+        <%=link_to 'Go to property', ""%>
+      </div>
+    </div>
+  <%end%>
+</div>
+<div class="pagination">
+  
+</div>
