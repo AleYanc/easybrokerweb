@@ -193,3 +193,27 @@ body {
   }
 }
 
+/* Pagination */
+.pagination {
+  width: 20%;
+  height: 35px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .pagination-btn {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #808080;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .disabled {
+    background-color: #ececec;
+    color: rgb(156, 156, 156);
+    cursor: default !important;
+  }
+}
+
