@@ -5,10 +5,10 @@ class PropertiesController < ApplicationController
   }
 
   def index
-    page = params[:page]
+    @current_page = [1, params[:page].to_i].max
     query = {
       "limit" => "15",
-      "page" => page || 1
+      "page" => @current_page || 1
     }
     request = HTTParty.get(BASE_URL, :query => query, :headers => HEADERS)
     @response = JSON.parse(request.body)
