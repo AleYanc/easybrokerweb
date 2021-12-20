@@ -8,7 +8,7 @@ class PropertiesController < ApplicationController
     @current_page = [1, params[:page].to_i].max
     query = {
       "limit" => "15",
-      "page" => @current_page || 1
+      "page" => @current_page
     }
     request = HTTParty.get(BASE_URL, :query => query, :headers => HEADERS)
     @response = JSON.parse(request.body)
