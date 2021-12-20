@@ -1,0 +1,133 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+/* Global */
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+  width: 100vw;
+  height: 7vh;
+  background-color: #747474;
+
+  .logo {
+    width: 250px;
+    height: 100%;
+    background-image: asset-url('easybrok.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.index-heading {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* Main wrapper */
+.main-wrapper {
+  width: 85vw;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .property-card {
+    width: 370px;
+    height: 425px;
+    background-color: #ececec;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 0 10px;
+    position: relative;
+    transition: all .2s;
+
+    .image {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .noimage{
+        font-style: italic;
+      }
+
+      img {
+        width: 175px;
+        height: 175px;
+      }
+    }
+
+    .card-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 15px 0;
+        text-align: center;
+        height: 20px;
+      }
+
+      .public-id {
+        font-style: italic;
+      }
+
+      .title {
+        font-weight: 500;
+      }
+    }
+
+    .property-link {
+      overflow: hidden;
+      width: 100%;
+      height: 0%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 15px;
+      background-color: rgba($color: #000000, $alpha: .5);
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-btn {
+        padding: 15px;
+        background-color: #ececec;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #333;
+      }
+    }
+
+    &:hover {
+      .property-link {
+        height: 100%;
+      }
+    }
+  }
+}
