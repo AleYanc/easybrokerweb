@@ -1,0 +1,18 @@
+<div class="contact-form">
+  <h3>Contáctanos</h3>
+  <%=form_tag post_contact_path, method: :post, id: 'post-contact-form' do%>
+    <div class="form-group">
+    <%=text_field_tag :name, params[:name], placeholder:'Nombre', required: true, class:'form-control'%>
+    <%=text_field_tag :phone, params[:phone], placeholder:'Numero telefónico', class:'form-control'%>
+    <%=text_field_tag :email, params[:email], placeholder:'Email', class:'form-control'%>
+    <%=text_field_tag :property, @response["public_id"], placeholder: "#{@response["public_id"]}", required: true, readonly: true, class:'form-control'%>
+    <%=text_area_tag :message, params[:message], placeholder: 'Mensaje', required: true, class:'form-control-textarea'%>
+    </div>
+
+    <div class="form-group">
+      <%=button_tag(type: :submit, class:'submit-btn') do%>
+        Submit
+      <%end%>
+    </div>
+  <%end%>
+</div>
