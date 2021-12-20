@@ -5,6 +5,8 @@ ruby '2.7.2'
 
 # Dotenv to read enviroment variables
 gem 'dotenv-rails'
+# httparty for http requests
+gem 'httparty', '~> 0.13.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use sqlite3 as the database for Active Record
