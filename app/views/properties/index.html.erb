@@ -22,5 +22,10 @@
   <%end%>
 </div>
 <div class="pagination">
-  
+  <%if @current_page == 1%>
+    <a class="pagination-btn disabled">Previous page</a>
+  <%else%>
+    <%=link_to 'Previous page', root_path(:page => @current_page - 1), class:'pagination-btn'%>
+  <%end%>
+  <%=link_to 'Next page', root_path(:page => @current_page + 1), class:'pagination-btn'%>
 </div>
