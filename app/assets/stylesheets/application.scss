@@ -15,12 +15,12 @@
  */
 
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 /* Global */
 body {
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Header */
@@ -32,7 +32,7 @@ body {
   .logo {
     width: 250px;
     height: 100%;
-    background-image: asset-url('easybrok.svg');
+    background-image: asset-url("easybrok.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -61,7 +61,7 @@ body {
     border-radius: 15px;
     padding: 0 10px;
     position: relative;
-    transition: all .2s;
+    transition: all 0.2s;
 
     .image {
       width: 100%;
@@ -70,7 +70,7 @@ body {
       align-items: center;
       justify-content: center;
 
-      .noimage{
+      .noimage {
         font-style: italic;
       }
 
@@ -109,8 +109,8 @@ body {
       top: 0;
       left: 0;
       border-radius: 15px;
-      background-color: rgba($color: #000000, $alpha: .5);
-      transition: all .2s;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      transition: all 0.2s;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -131,3 +131,65 @@ body {
     }
   }
 }
+
+/* Show page */
+.show-wrapper {
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+
+  .images {
+    position: relative;
+    width: 70vw;
+    height: 600px;
+
+    .owl-carousel {
+      position: relative;
+      height: 80% !important;
+
+      .owl-stage-outer {
+        .owl-stage {
+          .owl-item {
+            .item {
+              img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+
+      .owl-nav {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        button {
+          margin: 0 15px;
+          transform: scale(5);
+        }
+      }
+    }
+  }
+
+  .text {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #333;
+    }
+
+    h4 {
+      font-weight: 500;
+    }
+  }
+}
+
