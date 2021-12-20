@@ -16,7 +16,7 @@
         <p class="type"><i class="fas fa-map-marker-alt"></i> <%=property["location"]%></p>
       </div>
       <div class="property-link">
-        <%=link_to 'Go to property', ""%>
+        <%=link_to 'Go to property', "properties/#{property["public_id"]}", class:'property-link-btn'%>
       </div>
     </div>
   <%end%>
