@@ -1,0 +1,13 @@
+<div class="images">
+  <%if @response["property_images"]%>
+    <div class="owl-carousel">
+      <% @response["property_images"].each do |image| %>
+      <div class="item">
+        <%=image_tag image["url"]%> 
+      </div>
+      <% end %>
+    </div>
+  <%else%>
+    <p>No property images</p>
+  <%end%>
+</div>
