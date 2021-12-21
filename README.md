@@ -33,7 +33,8 @@ Dado a que la página estará consumiendo una API externa, al crear el proyecto 
 ### ¿Qué fue lo más difícil durante el desarrollo del proyecto?
 Diría que los tests, ya que nunca antes había testeado código el cuál usaba una API externa, y no lograba entender del todo la documentación que encontré mientras investigaba en el internet. Hacer los tests en sí no fue dificil y no me llevó mucho tiempo, ya que en base a lo que leí y mis conocimientos previos decidí testear los `requests` usando `Rspec`, `VCR` y `Webmock`, con el agregado de `simplecov` para chequear el porcentaje de cobertura de tests. 
 ### ¿Qué hubiera hecho de no tener límite de tiempo / contar con más tiempo?
-Me hubiera gustado, una vez finalizada la lógica del backend, enfocarme en crear un diseño atractivo y responsive. Aparte de eso, dedicar tiempo para optimizar mi código tanto como pueda. 
+Me hubiera gustado, una vez finalizada la lógica del backend, enfocarme en crear un diseño atractivo y responsive. Aparte de eso, dedicar tiempo para optimizar mi código tanto como pueda. <br>
+Además me hubiera gustado formatear correctamente la descripción de las propiedades.
 ### ¿Qué parte de mi código considero que no es 'limpio'?
 Yo diría que el método `post_contact` en el `properties_controller`. De tener más conocimiento y/o experiencia, me gustaría haberlo dejado más pequeño. Aun así, creo que cumple su funcionalidad y no es difícil de leer y mantener. 
 ### Bugs y optimizaciones que no pude realizar
