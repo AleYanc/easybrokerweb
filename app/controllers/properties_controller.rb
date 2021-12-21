@@ -1,9 +1,8 @@
 class PropertiesController < ApplicationController
   require './app/variables.rb'
-
   def index
     @current_page = [1, params[:page].to_i].max
-    request = HTTParty.get(BASE_URL + 'properties', :query => QUERY, :headers => HEADERS)
+    request = HTTParty.get(BASE_URL + 'properties', :query => {"page"=>@current_page,"limit"=>"15"}, :headers => HEADERS)
     @response = JSON.parse(request.body)
   end
 
