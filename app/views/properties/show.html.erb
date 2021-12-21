@@ -4,7 +4,7 @@
 
   <div class="text">
     <p class="title"><%=@response["title"]%> (<%=@response["public_id"]%>)</p>
-    <h4><%=@response["description"]%></h4>
+    <h4><%=@response["description"].gsub("/","  -  ")%></h4>
     <p><%=@response["property_type"]%></p>
     <p class="type"><i class="fas fa-map-marker-alt"></i> <%=@response["location"].fetch_values("name","street","postal_code").join("")%></p>
   </div>
