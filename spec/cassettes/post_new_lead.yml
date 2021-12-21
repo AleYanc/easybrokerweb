@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.stagingeb.com/v1/contact_requests
+    body:
+      encoding: UTF-8
+      string: '{"name":"Test","phone":"123456789","email":"test@test.com","property_id":"EB-C0156","message":"Test
+        message","source":"mydomain.com"}'
+    headers:
+      Content-Type:
+      - application/json
+      Charset:
+      - utf-8
+      X-Authorization:
+      - l7u502p8v46ba3ppgvj5y2aad50lb9
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Dec 2021 16:09:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - f2b2c1c6-5263-4432-b9ea-475c5a5df984
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"7fc3f09bcad46fb34713ee8ba90cb3ad"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.091078'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - rp=api.stagingeb.com; path=/; expires=Wed, 22 Dec 2021 16:09:56 GMT
+      - source=mydomain.com; path=/; expires=Tue, 21 Jun 2022 15:09:56 GMT
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.12
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.12
+    body:
+      encoding: UTF-8
+      string: '{"status":"successful"}'
+    http_version: null
+  recorded_at: Tue, 21 Dec 2021 16:09:56 GMT
+recorded_with: VCR 5.1.0

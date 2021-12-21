@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stagingeb.com/v1/properties/EB-C0156?limit=15&page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Charset:
+      - utf-8
+      X-Authorization:
+      - l7u502p8v46ba3ppgvj5y2aad50lb9
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Dec 2021 15:46:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a1b346c1-7cc8-4547-8d96-18f86d6bf459
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"4dc8f7d4dadf2d442557d058fb0447c8"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.050334'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - rp=api.stagingeb.com; path=/; expires=Wed, 22 Dec 2021 15:46:39 GMT
+      - source=api.stagingeb.com; path=/; expires=Tue, 21 Jun 2022 14:46:39 GMT
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.12
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.12
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJwdWJsaWNfaWQiOiJFQi1DMDE1NiIsInRpdGxlIjoiQ2FzYSBjb24gdXNvIGRlIHN1ZWxvIHBydWViYSIsImRlc2NyaXB0aW9uIjoiRXN0byBlcyB1bmEgcHJ1ZWJhIG3DoXMuIiwiYmVkcm9vbXMiOjEsImJhdGhyb29tcyI6MiwiaGFsZl9iYXRocm9vbXMiOm51bGwsInBhcmtpbmdfc3BhY2VzIjpudWxsLCJsb3Rfc2l6ZSI6MC4wLCJjb25zdHJ1Y3Rpb25fc2l6ZSI6MC4wLCJsb3RfbGVuZ3RoIjowLjAsImxvdF93aWR0aCI6MC4wLCJmbG9vcnMiOm51bGwsImZsb29yIjpudWxsLCJhZ2UiOm51bGwsImludGVybmFsX2lkIjpudWxsLCJleHBlbnNlcyI6bnVsbCwibG9jYXRpb24iOnsibmFtZSI6IkxhIFB1bnRhLCBDb3PDrW8sIEFndWFzY2FsaWVudGVzIiwibGF0aXR1ZGUiOjIyLjMyNzE3MjksImxvbmdpdHVkZSI6LTEwMi4yOTEzMzIsInN0cmVldCI6IiIsInBvc3RhbF9jb2RlIjoiIiwic2hvd19leGFjdF9sb2NhdGlvbiI6dHJ1ZSwiaGlkZV9leGFjdF9sb2NhdGlvbiI6ZmFsc2V9LCJwcm9wZXJ0eV90eXBlIjoiQ2FzYSBjb24gdXNvIGRlIHN1ZWxvIiwiY3JlYXRlZF9hdCI6IjIwMjAtMDgtMjdUMTA6MDQ6MDItMDU6MDAiLCJwdWJsaXNoZWRfYXQiOiIyMDIwLTEyLTEwVDExOjQ3OjM4LTA2OjAwIiwib3BlcmF0aW9ucyI6W3sidHlwZSI6InNhbGUiLCJhbW91bnQiOjEyMzEyMzEyLjAsImN1cnJlbmN5IjoiTVhOIiwiZm9ybWF0dGVkX2Ftb3VudCI6IiQxMiwzMTIsMzEyIiwidW5pdCI6InRvdGFsIn1dLCJwcm9wZXJ0eV9maWxlcyI6W10sInZpZGVvcyI6W10sInZpcnR1YWxfdG91ciI6bnVsbCwiY29sbGFib3JhdGlvbl9ub3RlcyI6bnVsbCwicHVibGljX3VybCI6Imh0dHBzOi8vd3d3LnN0YWdpbmdlYi5jb20vbXgvaW5tdWVibGUvY2FzYS1jb24tdXNvLWRlLXN1ZWxvLXBydWViYSIsInRhZ3MiOltdLCJzaG93X3ByaWNlcyI6dHJ1ZSwicHJvcGVydHlfaW1hZ2VzIjpbeyJ0aXRsZSI6IiIsInVybCI6Imh0dHBzOi8vYXNzZXRzLnN0YWdpbmdlYi5jb20vcHJvcGVydHlfaW1hZ2VzLzMwMTU2LzExNjYzMC9FQi1DMDE1Ni5wbmc/dmVyc2lvbj0xNTk4NTQwNjc1In1dLCJhZ2VudCI6eyJpZCI6MjgyOSwibmFtZSI6IkFsZWphbmRybyBCbGFuY28gWml2ZWMiLCJmdWxsX25hbWUiOiJBbGVqYW5kcm8gQmxhbmNvIFppdmVjIiwibW9iaWxlX3Bob25lIjoiNTUxMjEyMzEzMiIsInByb2ZpbGVfaW1hZ2VfdXJsIjoiaHR0cHM6Ly9hc3NldHMuc3RhZ2luZ2ViLmNvbS9wcm9maWxlX2ltYWdlcy8yODI5L0FsZXhfXzFfX19zY2FsZWRfLmpwZyIsImVtYWlsIjoiYWJsYW5jbytwcnVlYmE1QGVhc3licm9rZXIuY29tIn0sImZlYXR1cmVzIjpbeyJuYW1lIjoiQmFsY8OzbiIsImNhdGVnb3J5IjoiRXh0ZXJpb3IifSx7Im5hbWUiOiJFc3RhY2lvbmFtaWVudG8gdGVjaGFkbyIsImNhdGVnb3J5IjoiRXh0ZXJpb3IifV19
+    http_version: null
+  recorded_at: Tue, 21 Dec 2021 15:46:39 GMT
+recorded_with: VCR 5.1.0
