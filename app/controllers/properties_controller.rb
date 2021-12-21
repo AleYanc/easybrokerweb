@@ -1,5 +1,5 @@
 class PropertiesController < ApplicationController
-  require './app/variables.rb'
+  require './variables.rb'
 
   def index
     @current_page = [1, params[:page].to_i].max
