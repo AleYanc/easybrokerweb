@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stagingeb.com/v1/properties?limit=15&page=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 21 Dec 2021 16:23:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e45f53ac-cfbc-434e-b5c9-63564e6a5dff
+      X-Download-Options:
+      - noopen
+      X-Runtime:
+      - '0.009669'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - rp=api.stagingeb.com; path=/; expires=Wed, 22 Dec 2021 16:23:59 GMT
+      - source=api.stagingeb.com; path=/; expires=Tue, 21 Jun 2022 15:23:59 GMT
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.12
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.12
+    body:
+      encoding: UTF-8
+      string: '{"error":"Your API key is invalid"}'
+    http_version: null
+  recorded_at: Tue, 21 Dec 2021 16:23:59 GMT
+recorded_with: VCR 5.1.0
