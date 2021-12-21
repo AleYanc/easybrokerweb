@@ -2,6 +2,13 @@ require 'rails_helper'
 require './app/variables.rb'
 
 describe 'Call to EasyBroker API', :type => :request do
+  it 'returns invalid API key when no headers are sent' do 
+    VCR.use_cassette("get_properties_without_api") do
+      @response = HTTParty.get(BASE_URL + 'properties', :query => QUERY)
+      expect(@response["error"]).to eq('Your API key is invalid')
+    end
+  end
+  
   it 'returns 15 properties' do
     VCR.use_cassette("get_properties") do
       @response = HTTParty.get(BASE_URL + 'properties', :query => QUERY, :headers => HEADERS)

@@ -15,7 +15,8 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'webmock/rspec'
 require 'vcr'
-require File.expand_path("../../config/environment", __FILE__)
+require 'simplecov'
+SimpleCov.start
 
 WebMock.disable_net_connect!(allow_localhost: true)
 
