@@ -6,5 +6,5 @@ HEADERS = {
 }
 QUERY = {
   "limit" => "15",
-  "page" => @current_page
+  "page" => '1'
 }
