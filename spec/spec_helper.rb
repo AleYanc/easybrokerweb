@@ -13,6 +13,23 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'webmock/rspec'
+require 'vcr'
+require File.expand_path("../../config/environment", __FILE__)
+
+WebMock.disable_net_connect!(allow_localhost: true)
+
+VCR.configure do |config|
+  config.allow_http_connections_when_no_cassette = false
+  config.cassette_library_dir = File.expand_path('cassettes', __dir__)
+  config.hook_into :webmock
+  config.ignore_request { ENV['DISABLE_VCR'] }
+  config.ignore_localhost = true
+  config.default_cassette_options = {
+    record: :new_episodes
+  }
+end
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
