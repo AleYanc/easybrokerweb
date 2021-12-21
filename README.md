@@ -34,7 +34,8 @@ Dado a que la página estará consumiendo una API externa, al crear el proyecto 
 Diría que los tests, ya que nunca antes había testeado código el cuál usaba una API externa, y no lograba entender del todo la documentación que encontré mientras investigaba en el internet. Hacer los tests en sí no fue dificil y no me llevó mucho tiempo, ya que en base a lo que leí y mis conocimientos previos decidí testear los `requests` usando `Rspec`, `VCR` y `Webmock`, con el agregado de `simplecov` para chequear el porcentaje de cobertura de tests. 
 ### ¿Qué hubiera hecho de no tener límite de tiempo / contar con más tiempo?
 Me hubiera gustado, una vez finalizada la lógica del backend, enfocarme en crear un diseño atractivo y responsive. Aparte de eso, dedicar tiempo para optimizar mi código tanto como pueda. <br>
-Además me hubiera gustado formatear correctamente la descripción de las propiedades.
+Además me hubiera gustado formatear correctamente la descripción de las propiedades. <br>
+Por último, me encantaría poder haber investigado más sobre testing y poder ir un paso más allá con los tests que realicé, pero lamentablemente no es algo que pueda alcanzar en unos pocos días. Aun así, espero tener la oportunidad de hacerlo con el paso del tiempo. 
 ### ¿Qué parte de mi código considero que no es 'limpio'?
 Yo diría que el método `post_contact` en el `properties_controller`. De tener más conocimiento y/o experiencia, me gustaría haberlo dejado más pequeño. Aun así, creo que cumple su funcionalidad y no es difícil de leer y mantener. 
 ### Bugs y optimizaciones que no pude realizar
