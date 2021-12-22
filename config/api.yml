@@ -1,0 +1,11 @@
+defaults: &defaults
+  url: 'https://api.stagingeb.com/v1/'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
