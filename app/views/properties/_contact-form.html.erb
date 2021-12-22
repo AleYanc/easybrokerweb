@@ -5,7 +5,7 @@
     <%=text_field_tag :name, params[:name], placeholder:'Nombre', required: true, class:'form-control'%>
     <%=text_field_tag :phone, params[:phone], placeholder:'Numero telefónico', class:'form-control'%>
     <%=text_field_tag :email, params[:email], placeholder:'Email', class:'form-control'%>
-    <%=text_field_tag :property, @response["public_id"], placeholder: "#{@response["public_id"]}", required: true, readonly: true, class:'form-control'%>
+    <%=hidden_field_tag :property_id, @response["public_id"]%>
     <%=text_area_tag :message, params[:message], placeholder: 'Mensaje', required: true, class:'form-control-textarea'%>
     </div>
 
