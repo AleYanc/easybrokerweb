@@ -1,14 +1,14 @@
 class PropertiesController < ApplicationController
-  require './variables.rb'
+  require './config/variables.rb'
 
   def index
     @current_page = [1, params[:page].to_i].max
-    request = HTTParty.get(BASE_URL + 'properties', :query => {"page"=>@current_page,"limit"=>"15"}, :headers => HEADERS)
+    request = HTTParty.get(Rails.configuration.api['url'] + 'properties', :query => {"page"=>@current_page,"limit"=>"15"}, :headers => HEADERS)
     @response = JSON.parse(request.body)
   end
 
   def show
-    request = HTTParty.get(BASE_URL + "properties/#{params[:id]}", :headers => HEADERS)
+    request = HTTParty.get(Rails.configuration.api['url'] + "properties/#{params[:id]}", :headers => HEADERS)
     @response = JSON.parse(request.body)
   end
 
@@ -22,7 +22,7 @@ class PropertiesController < ApplicationController
       source: "mydomain.com"
     }
 
-    @response = HTTParty.post(BASE_URL + 'contact_requests', {body: data.to_json, :headers => HEADERS })
+    @response = HTTParty.post(Rails.configuration.api['url'] + 'contact_requests', {body: data.to_json, :headers => HEADERS })
 
     if @response["status"] == "successful"
       flash[:notice] = "¡Mensaje enviado! Estaremos en contacto pronto"

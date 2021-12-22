@@ -1,4 +1,3 @@
-BASE_URL='https://api.stagingeb.com/v1/'
 HEADERS = {
   "Content-Type" => 'application/json',
   'charset' => 'utf-8', 
