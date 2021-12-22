@@ -1,17 +1,17 @@
 require 'rails_helper'
-require './app/variables.rb'
+require './config/variables.rb'
 
 describe 'Call to EasyBroker API', :type => :request do
   it 'returns invalid API key when no headers are sent' do 
     VCR.use_cassette("get_properties_without_api") do
-      @response = HTTParty.get(BASE_URL + 'properties', :query => QUERY)
+      @response = HTTParty.get(Rails.configuration.api['url'] + 'properties', :query => QUERY)
       expect(@response["error"]).to eq('Your API key is invalid')
     end
   end
   
   it 'returns 15 properties' do
     VCR.use_cassette("get_properties") do
-      @response = HTTParty.get(BASE_URL + 'properties', :query => QUERY, :headers => HEADERS)
+      @response = HTTParty.get(Rails.configuration.api['url'] + 'properties', :query => QUERY, :headers => HEADERS)
       # Checks if the response code was 200
       expect(@response.code).to eq(200)
 
@@ -25,7 +25,7 @@ describe 'Call to EasyBroker API', :type => :request do
 
   it 'returns one property' do 
     VCR.use_cassette("get_property") do
-      @response = HTTParty.get(BASE_URL + 'properties/EB-C0156', :query => QUERY, :headers => HEADERS)
+      @response = HTTParty.get(Rails.configuration.api['url'] + 'properties/EB-C0156', :query => QUERY, :headers => HEADERS)
       # Checks if the response code was 200
       expect(@response.code).to eq(200)
 
@@ -47,7 +47,7 @@ describe 'Call to EasyBroker API', :type => :request do
         message: 'Test message',
         source: "mydomain.com"
       }
-      @response = HTTParty.post(BASE_URL + 'contact_requests', {body: data.to_json, :headers => HEADERS })
+      @response = HTTParty.post(Rails.configuration.api['url'] + 'contact_requests', {body: data.to_json, :headers => HEADERS })
 
       # Checks if the status is successful and the post request was made
       expect(@response["status"]).to eq('successful')

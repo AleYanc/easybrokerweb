@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-12-21T13:34:14-03:00">2021-12-21T13:34:14-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-12-21T22:53:53-03:00">2021-12-21T22:53:53-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -82,22 +82,11 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#8c5fc5369d850c00596e4325280ec269b5de8a7a" class="src_link" title="app/variables.rb">app/variables.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
-        
-          <tr class="t-file">
             <td class="strong t-file__name"><a href="#2b447d1c53a449635a72b3d1dbbec40c2130c828" class="src_link" title="config/application.rb">config/application.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">22</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -280,6 +269,17 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#9fd2bcbc339ac494a2a8d233c230783f4fcb8e27" class="src_link" title="config/variables.rb">config/variables.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#68809b301aa92dd5b84376d3a780c6faeda13559" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
             <td class="yellow strong cell--number t-file__coverage">84.62 %</td>
             <td class="cell--number">64</td>
@@ -371,147 +371,6 @@
 </div>
 
       
-        <div class="source_table" id="8c5fc5369d850c00596e4325280ec269b5de8a7a">
-  <div class="header">
-    <h3>app/variables.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">BASE_URL=&#39;https://api.stagingeb.com/v1/&#39;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby">HEADERS = {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  &quot;Content-Type&quot; =&gt; &#39;application/json&#39;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby">  &#39;charset&#39; =&gt; &#39;utf-8&#39;, </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
-            
-
-            <code class="ruby">  &quot;X-Authorization&quot;  =&gt; ENV[&#39;API_KEY&#39;]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="6">
-            
-            
-
-            
-
-            <code class="ruby">}</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">QUERY = {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  &quot;limit&quot; =&gt; &quot;15&quot;,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">  &quot;page&quot; =&gt; @current_page</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby">}</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
         <div class="source_table" id="2b447d1c53a449635a72b3d1dbbec40c2130c828">
   <div class="header">
     <h3>config/application.rb</h3>
@@ -526,8 +385,8 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -671,13 +530,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    config.api = config_for(:api)</code>
           </li>
         </div>
       
@@ -688,7 +547,7 @@
 
             
 
-            <code class="ruby">    # Configuration for the application, engines, and railties goes here.</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -699,7 +558,7 @@
 
             
 
-            <code class="ruby">    #</code>
+            <code class="ruby">    # Configuration for the application, engines, and railties goes here.</code>
           </li>
         </div>
       
@@ -710,7 +569,7 @@
 
             
 
-            <code class="ruby">    # These settings can be overridden in specific environments using the files</code>
+            <code class="ruby">    #</code>
           </li>
         </div>
       
@@ -721,7 +580,7 @@
 
             
 
-            <code class="ruby">    # in config/environments, which are processed later.</code>
+            <code class="ruby">    # These settings can be overridden in specific environments using the files</code>
           </li>
         </div>
       
@@ -732,7 +591,7 @@
 
             
 
-            <code class="ruby">    #</code>
+            <code class="ruby">    # in config/environments, which are processed later.</code>
           </li>
         </div>
       
@@ -743,7 +602,7 @@
 
             
 
-            <code class="ruby">    # config.time_zone = &quot;Central Time (US &amp; Canada)&quot;</code>
+            <code class="ruby">    #</code>
           </li>
         </div>
       
@@ -754,7 +613,7 @@
 
             
 
-            <code class="ruby">    # config.eager_load_paths &lt;&lt; Rails.root.join(&quot;extras&quot;)</code>
+            <code class="ruby">    # config.time_zone = &quot;Central Time (US &amp; Canada)&quot;</code>
           </li>
         </div>
       
@@ -765,12 +624,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    # config.eager_load_paths &lt;&lt; Rails.root.join(&quot;extras&quot;)</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
@@ -3525,6 +3395,136 @@
 </div>
 
       
+        <div class="source_table" id="9fd2bcbc339ac494a2a8d233c230783f4fcb8e27">
+  <div class="header">
+    <h3>config/variables.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>2</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby">HEADERS = {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  &quot;Content-Type&quot; =&gt; &#39;application/json&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">  &#39;charset&#39; =&gt; &#39;utf-8&#39;, </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  &quot;X-Authorization&quot;  =&gt; ENV[&#39;API_KEY&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">QUERY = {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  &quot;limit&quot; =&gt; &quot;15&quot;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  &quot;page&quot; =&gt; &#39;1&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">}</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="68809b301aa92dd5b84376d3a780c6faeda13559">
   <div class="header">
     <h3>spec/rails_helper.rb</h3>
@@ -4304,7 +4304,7 @@
 
             
 
-            <code class="ruby">require &#39;./app/variables.rb&#39;</code>
+            <code class="ruby">require &#39;./config/variables.rb&#39;</code>
           </li>
         </div>
       
@@ -4359,7 +4359,7 @@
 
             
 
-            <code class="ruby">      @response = HTTParty.get(BASE_URL + &#39;properties&#39;, :query =&gt; QUERY)</code>
+            <code class="ruby">      @response = HTTParty.get(Rails.configuration.api[&#39;url&#39;] + &#39;properties&#39;, :query =&gt; QUERY)</code>
           </li>
         </div>
       
@@ -4436,7 +4436,7 @@
 
             
 
-            <code class="ruby">      @response = HTTParty.get(BASE_URL + &#39;properties&#39;, :query =&gt; QUERY, :headers =&gt; HEADERS)</code>
+            <code class="ruby">      @response = HTTParty.get(Rails.configuration.api[&#39;url&#39;] + &#39;properties&#39;, :query =&gt; QUERY, :headers =&gt; HEADERS)</code>
           </li>
         </div>
       
@@ -4590,7 +4590,7 @@
 
             
 
-            <code class="ruby">      @response = HTTParty.get(BASE_URL + &#39;properties/EB-C0156&#39;, :query =&gt; QUERY, :headers =&gt; HEADERS)</code>
+            <code class="ruby">      @response = HTTParty.get(Rails.configuration.api[&#39;url&#39;] + &#39;properties/EB-C0156&#39;, :query =&gt; QUERY, :headers =&gt; HEADERS)</code>
           </li>
         </div>
       
@@ -4832,7 +4832,7 @@
 
             
 
-            <code class="ruby">      @response = HTTParty.post(BASE_URL + &#39;contact_requests&#39;, {body: data.to_json, :headers =&gt; HEADERS })</code>
+            <code class="ruby">      @response = HTTParty.post(Rails.configuration.api[&#39;url&#39;] + &#39;contact_requests&#39;, {body: data.to_json, :headers =&gt; HEADERS })</code>
           </li>
         </div>
       

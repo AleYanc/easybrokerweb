@@ -152,6 +152,7 @@
           1,
           null,
           1,
+          1,
           null,
           null,
           null,
@@ -429,9 +430,8 @@
           null
         ]
       },
-      "/home/ale/Ruby Projects/easybrokerweb/app/variables.rb": {
+      "/home/ale/Ruby Projects/easybrokerweb/config/variables.rb": {
         "lines": [
-          1,
           null,
           1,
           null,
@@ -444,6 +444,6 @@
         ]
       }
     },
-    "timestamp": 1640104454
+    "timestamp": 1640138033
   }
 }
