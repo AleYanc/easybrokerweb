@@ -36,7 +36,7 @@ Diría que los tests, ya que nunca antes había testeado código el cuál usaba 
 Me hubiera gustado, una vez finalizada la lógica del backend, enfocarme en crear un diseño atractivo y responsive. Aparte de eso, dedicar tiempo para optimizar mi código tanto como pueda. <br>
 Además me hubiera gustado formatear correctamente la descripción de las propiedades. <br>
 Me encantaría poder haber investigado más sobre testing y poder ir un paso más allá con los tests que realicé, pero lamentablemente no es algo que pueda alcanzar en unos pocos días. Aun así, espero tener la oportunidad de hacerlo con el paso del tiempo.  <br>
-#### Un último error que me gustaría haber corregido fue el de sólo publicar las propiedades con un status de published, en un principio no entendí bien como hacer el método para hacer esto y cuando entendí la documentación y que sólo debía mandarlo como un header ya se me había acabado el tiempo, por lo que quedó como un pendiente.
+#### Un último error que me gustaría haber corregido fue el de sólo publicar las propiedades con un status de published, en un principio no entendí bien como hacer el método para llevar eso a cabo y cuando entendí la documentación y que sólo debía mandarlo como un header ya se me había acabado el tiempo, por lo que quedó como un pendiente.
 ### ¿Qué parte de mi código considero que no es 'limpio'?
 Yo diría que el método `post_contact` en el `properties_controller`. De tener más conocimiento y/o experiencia, me gustaría haberlo dejado más pequeño. Aun así, creo que cumple su funcionalidad y no es difícil de leer y mantener. 
 ### Bugs y optimizaciones que no pude realizar
