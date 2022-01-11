@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 class PropertiesController < ApplicationController
-  require './config/variables'
-
   def index
     @current_page = [1, params[:page].to_i].max
     request = HTTParty.get(Rails.configuration.api['properties'],
