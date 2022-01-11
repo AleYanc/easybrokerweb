@@ -4,5 +4,10 @@
   <%else%>
     <%=link_to 'Previous page', root_path(:page => @current_page - 1), class:'pagination-btn'%>
   <%end%>
-  <%=link_to 'Next page', root_path(:page => @current_page + 1), class:'pagination-btn'%>
+
+  <%if @current_page == @total_pages + 1%>
+    <a class="pagination-btn disabled">Next page</a>
+  <%else%>
+    <%=link_to 'Next page', root_path(:page => @current_page + 1), class:'pagination-btn'%>
+  <%end%>
 </div>

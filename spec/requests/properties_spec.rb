@@ -1,17 +1,19 @@
-require 'rails_helper'
-require './config/variables.rb'
+# frozen_string_literal: true
 
-describe 'Call to EasyBroker API', :type => :request do
-  it 'returns invalid API key when no headers are sent' do 
-    VCR.use_cassette("get_properties_without_api") do
-      @response = HTTParty.get(Rails.configuration.api['url'] + 'properties', :query => QUERY)
-      expect(@response["error"]).to eq('Your API key is invalid')
+require 'rails_helper'
+require './config/variables'
+
+describe 'Call to EasyBroker API', type: :request do
+  it 'returns invalid API key when no headers are sent' do
+    VCR.use_cassette('get_properties_without_api') do
+      @response = HTTParty.get("#{Rails.configuration.api['url']}properties", query: QUERY)
+      expect(@response['error']).to eq('Your API key is invalid')
     end
   end
-  
+
   it 'returns 15 properties' do
-    VCR.use_cassette("get_properties") do
-      @response = HTTParty.get(Rails.configuration.api['url'] + 'properties', :query => QUERY, :headers => HEADERS)
+    VCR.use_cassette('get_properties') do
+      @response = HTTParty.get("#{Rails.configuration.api['url']}properties", query: QUERY, headers: HEADERS)
       # Checks if the response code was 200
       expect(@response.code).to eq(200)
 
@@ -19,13 +21,14 @@ describe 'Call to EasyBroker API', :type => :request do
       # Checks if the hash is returned properly
       expect(@response).to be_kind_of(Hash)
       # Checks if the response has 15 properties
-      expect(@response["content"].size).to eq(15)
+      expect(@response['content'].size).to eq(15)
     end
   end
 
-  it 'returns one property' do 
-    VCR.use_cassette("get_property") do
-      @response = HTTParty.get(Rails.configuration.api['url'] + 'properties/EB-C0156', :query => QUERY, :headers => HEADERS)
+  it 'returns one property' do
+    VCR.use_cassette('get_property') do
+      @response = HTTParty.get("#{Rails.configuration.api['url']}properties/EB-C0156", query: QUERY,
+                                                                                       headers: HEADERS)
       # Checks if the response code was 200
       expect(@response.code).to eq(200)
 
@@ -33,24 +36,25 @@ describe 'Call to EasyBroker API', :type => :request do
       # Checks if the hash is returned properly
       expect(@response).to be_kind_of(Hash)
       # Checks if the title is the same as the one in the property ID
-      expect(@response["title"]).to eq('Casa con uso de suelo prueba')
+      expect(@response['title']).to eq('Casa con uso de suelo prueba')
     end
   end
 
-  it 'posts new lead' do 
-    VCR.use_cassette('post_new_lead') do 
+  it 'posts new lead' do
+    VCR.use_cassette('post_new_lead') do
       data = {
         name: 'Test',
         phone: '123456789',
         email: 'test@test.com',
         property_id: 'EB-C0156',
         message: 'Test message',
-        source: "mydomain.com"
+        source: 'mydomain.com'
       }
-      @response = HTTParty.post(Rails.configuration.api['url'] + 'contact_requests', {body: data.to_json, :headers => HEADERS })
+      @response = HTTParty.post("#{Rails.configuration.api['url']}contact_requests",
+                                { body: data.to_json, headers: HEADERS })
 
       # Checks if the status is successful and the post request was made
-      expect(@response["status"]).to eq('successful')
+      expect(@response['status']).to eq('successful')
     end
   end
 end

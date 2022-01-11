@@ -1,5 +1,7 @@
 defaults: &defaults
-  url: 'https://api.stagingeb.com/v1/'
+  base: 'https://api.stagingeb.com/v1/'
+  properties: 'https://api.stagingeb.com/v1/properties'
+  contact: 'https://api.stagingeb.com/v1/contact_requests'
 
 development:
   <<: *defaults
