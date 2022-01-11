@@ -110,4 +110,62 @@ http_interactions:
       string: '{"error":"Your API key is invalid"}'
     http_version: null
   recorded_at: Wed, 22 Dec 2021 01:53:48 GMT
+- request:
+    method: get
+    uri: https://api.stagingeb.com/v1/properties?limit=15&page=1&search%5Bstatuses%5D%5B0%5D=published
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 11 Jan 2022 16:10:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - a6bb50c4-5217-4d9a-bdc9-363f2dc4f4d9
+      X-Download-Options:
+      - noopen
+      X-Runtime:
+      - '0.009109'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - rp=api.stagingeb.com; path=/; expires=Wed, 12 Jan 2022 16:10:39 GMT
+      - source=api.stagingeb.com; path=/; expires=Mon, 11 Jul 2022 15:10:39 GMT
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.12
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.12
+    body:
+      encoding: UTF-8
+      string: '{"error":"Your API key is invalid"}'
+    http_version: null
+  recorded_at: Tue, 11 Jan 2022 16:10:39 GMT
 recorded_with: VCR 5.1.0

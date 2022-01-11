@@ -3,7 +3,8 @@
     "coverage": {
       "/home/ale/Ruby Projects/easybrokerweb/spec/requests/properties_spec.rb": {
         "lines": [
-          1,
+          null,
+          null,
           1,
           null,
           1,
@@ -32,7 +33,6 @@
           1,
           1,
           null,
-          1,
           null,
           1,
           null,
@@ -40,19 +40,22 @@
           null,
           1,
           null,
-          null,
-          null,
-          1,
-          1,
-          null,
           1,
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
           1,
+          null,
           null,
           null,
           1,
@@ -63,6 +66,8 @@
       },
       "/home/ale/Ruby Projects/easybrokerweb/spec/rails_helper.rb": {
         "lines": [
+          null,
+          null,
           null,
           1,
           1,
@@ -132,6 +137,8 @@
       "/home/ale/Ruby Projects/easybrokerweb/config/environment.rb": {
         "lines": [
           null,
+          null,
+          null,
           1,
           null,
           null,
@@ -140,6 +147,8 @@
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/application.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -167,6 +176,8 @@
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/boot.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -175,6 +186,8 @@
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/spring.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           null,
@@ -185,6 +198,8 @@
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/environments/test.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           null,
@@ -256,11 +271,14 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/initializers/assets.rb": {
         "lines": [
+          null,
+          null,
           null,
           null,
           null,
@@ -286,11 +304,32 @@
           null,
           null,
           null,
+          null,
+          null,
           1
+        ]
+      },
+      "/home/ale/Ruby Projects/easybrokerweb/config/initializers/constants.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
         ]
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/initializers/content_security_policy.rb": {
         "lines": [
+          null,
           null,
           null,
           null,
@@ -329,11 +368,15 @@
           null,
           null,
           null,
+          null,
+          null,
           1
         ]
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/initializers/filter_parameter_logging.rb": {
         "lines": [
+          null,
+          null,
           null,
           null,
           null,
@@ -359,11 +402,14 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/initializers/json.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           null,
@@ -378,11 +424,13 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/initializers/permissions_policy.rb": {
         "lines": [
+          null,
           null,
           null,
           null,
@@ -404,6 +452,8 @@
           null,
           null,
           null,
+          null,
+          null,
           1,
           2,
           null,
@@ -416,6 +466,8 @@
       },
       "/home/ale/Ruby Projects/easybrokerweb/config/routes.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -426,24 +478,13 @@
       },
       "/home/ale/Ruby Projects/easybrokerweb/app/helpers/application_helper.rb": {
         "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/ale/Ruby Projects/easybrokerweb/config/variables.rb": {
-        "lines": [
-          null,
-          1,
-          null,
-          null,
           null,
           null,
           1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1640138033
+    "timestamp": 1641917441
   }
 }
